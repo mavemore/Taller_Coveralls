@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 import unittest
 import descuento_pension
 
-class TestPension(unittest.TestCase):
+class Test(unittest.TestCase):
 
 	def test_pension_1(self):
 		pensionInicial = 250
