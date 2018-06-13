@@ -2,11 +2,9 @@ language: python
 python:
   - "3.6"
 
-before_install: "pip install -r requirements.txt"
-
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+# command to run tests
 script:
-
-  # Para ejecutar pruebas del examen:
-  - "python -m coverage run test.py"
-
-after_script: "coveralls"
+  - pytest # or py.test for Python versions 3.5 and below
