@@ -14,4 +14,4 @@ def calcularDescuentoPension(pensionInicial,nHermanos, padresExAlumnos, promedio
 		pension*=(1-descuentoHermanos-descuentoAcademico)
 	else:
 		pension*=0.5	
-	return pension
+	return round(pension,2)
